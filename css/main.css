@@ -1,0 +1,21 @@
+::selection {
+    color: white;
+    background: black;
+}
+
+.header_bg {
+    height: 100vh;
+    background-image: url(../image/00_home/bg_00_home.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section_bg {
+    background-color: #FBFBFB;
+}
+
+.footer_bg{
+    background-color: #333333;
+}
