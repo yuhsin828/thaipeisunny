@@ -3,7 +3,7 @@
     background: black;
 }
 
-.header_bg {
+.home_bg {
     height: 100vh;
     background-image: url(../image/00_home/bg_00_home.png);
     background-position: center top;
@@ -12,10 +12,38 @@
     background-size: cover;
 }
 
-.section_bg {
+.student_bg {
+    height: 100vh;
+    background-image: url(../image/01_student/bg_01_student.JPG);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg_light {
     background-color: #FBFBFB;
 }
 
-.footer_bg{
+.bg_dark {
     background-color: #333333;
+}
+
+.bg_red {
+    background-color: #D99694;
+}
+
+.card_bg {
+    background-color: #FBFBFB;
+    border-radius: 10%;
+}
+
+.ic_pos {
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
