@@ -26,7 +26,7 @@ function loadHeader() {
                 </a>
             </div>
 
-            <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top rounded-pill py-2 fw-bolder">
+            <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top rounded-pill py-2">
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -68,9 +68,9 @@ function loadFooter() {
                 <img src="./image/logo_light.png" alt="國北小泰陽 學習資源網" width="280px" class="img-fluid">
             </div>
             <ul class="nav d-flex justify-content-between">
-                <li class="nav-item"><a href="#" class="nav-link text-light">著作權宣告</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-light">網站導覽</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-light">聯絡我們</a></li>
+                <li class="nav-item p-2"><a href="#" class="nav-link text_light">著作權宣告</a></li>
+                <li class="nav-item p-2"><a href="#" class="nav-link text_light">網站導覽</a></li>
+                <li class="nav-item p-2"><a href="#" class="nav-link text_light">聯絡我們</a></li>
             </ul>
         </div>
     `
