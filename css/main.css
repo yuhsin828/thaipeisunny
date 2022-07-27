@@ -21,11 +21,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow-y: auto;
 }
 
-.nav_list {
-    height: 100%;
-    width: 100%;
+.nav_ctrl {
+    position: relative;
+    z-index: 99;
 }
 
 .bg_ctrl {
