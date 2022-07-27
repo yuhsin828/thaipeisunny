@@ -4,6 +4,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -11,23 +12,75 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-/*---------------- background image ----------------*/
-.home_bg {
+/*---------------- main background ----------------*/
+.lattice_bg {
     height: 100vh;
-    background-image: url(../image/00_home/bg_00_home.png);
+    width: 100vw;
+    background-image: url(../image/00_home/header_bg.svg);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.student_bg {
-    height: 100vh;
-    background-image: url(../image/01_student/bg_01_student.JPG);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.bg_ctrl {
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.sunny_ctrl {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.title_ctrl {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.elephant_ctrl {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.img_width {
+    max-width: 100%
+}
+
+@media screen and (min-width:576px) {
+    .title_svg {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .bg_ctrl {
+        height: 80%;
+    }
+
+    .header_svg {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .sunny_ctrl {
+        left: 20%;
+    }
+
+    .elephant_ctrl {
+        right: 20%;
+    }
 }
 
 /*---------------- background color ----------------*/
@@ -44,7 +97,7 @@ body {
 }
 
 .bg_yellow {
-    background-color: #F8DE75;
+    background-color: #f8de75;
 }
 
 .bg_lightYellow {
@@ -76,6 +129,21 @@ body {
     color: #F8DE75;
 }
 
+/*---------------- navigation ----------------*/
+@media screen and (min-width:992px) {
+    .nav_btn {
+        background-color: #FFF9E1;
+        border: #333333 solid 1px;
+        border-radius: 20px;
+        box-shadow: 0 4px;
+        margin: 0 1rem;
+    }
+
+    .nav_btn:hover {
+        background-color: #F8DE75;
+        box-shadow: 0px 0px;
+    }
+}
 
 /*---------------- card style ----------------*/
 .card_bg {
