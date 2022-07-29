@@ -13,15 +13,18 @@ body {
 }
 
 /*---------------- main background ----------------*/
-.lattice_bg {
+.hw_100 {
     height: 100vh;
     width: 100vw;
+}
+
+.bg_lattice {
     background-image: url(../image/00_home/header_bg.svg);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .nav_ctrl {
@@ -94,25 +97,51 @@ body {
 }
 
 /*---------------- navigation ----------------*/
-.nav_btn {
-    width: 150px;
-    color: #333333;
-    text-align: center;
-    background-color: #FFF9E1;
-    border: #333333 solid 1px;
-    border-radius: 20px;
-    box-shadow: 0 4px;
+.nav_top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #F8DE76;
 }
 
-.nav_btn:hover {
+.nav_bg{
+    background-color: rgba(255, 251, 243, 0.8);
+}
+
+.nav_text {
     color: #333333;
-    background-color: #F8DE75;
-    box-shadow: 0px 0px;
+    text-align: center;
+}
+
+.nav_text:hover {
+    color: #FA760A;
+}
+
+@media screen and (min-width:768px) {
+    .nav_bg{
+        background-color: rgba(255, 251, 243, 0);
+    }
+
+    .nav_btn {
+        width: 150px;
+        background-color: #FFF9E1;
+        border: #333333 solid 1px;
+        border-radius: 20px;
+        box-shadow: 0 4px;
+    }
+
+    .nav_btn:hover {
+        color: #333333;
+        background-color: #F8DE76;
+        box-shadow: 0px 0px;
+    }
 }
 
 /*---------------- card style ----------------*/
 .card_bg {
-    background-color: #FBFBFB;
+    background-color: #FFFEF9;
     border-radius: 10%;
 }
 
@@ -128,7 +157,7 @@ body {
 
 /*---------------- background color ----------------*/
 .bg_light {
-    background-color: #FBFBFB;
+    background-color: #FFFEF9;
 }
 
 .bg_dark {
@@ -140,32 +169,16 @@ body {
 }
 
 .bg_yellow {
-    background-color: #f8de75;
+    background-color: #F8DE76;
 }
 
 .bg_lightYellow {
-    background-color: #F9CB0A;
-}
-
-.bg_lightYellow:hover {
-    background-color: #F8DE75;
+    background-color: #FFFBF3;
 }
 
 /*---------------- text color ----------------*/
-/* .text_normal {
-    color: #333333;
-}
-
-.text_unselected {
-    color: #888888;
-}
-
-.text_unselected:hover {
-    color: #F9CB0A;
-} */
-
 .text_light {
-    color: #FBFBFB;
+    color: #FFFEF9;
 }
 
 .text_light:hover {
