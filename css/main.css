@@ -144,6 +144,19 @@ nav .text_dark:hover {
     }
 }
 
+/*---------------- goTop button ----------------*/
+.top_btn {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    background-color: #F8DE76;
+    border: 0;
+    border-radius: 50%;
+}
+
 /*---------------- card style ----------------*/
 .card_bg {
     background-color: #FFFEF9;
