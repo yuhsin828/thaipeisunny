@@ -4,6 +4,7 @@ const topNav = $('#topNav').offset().top;
 $(document).ready(function () {
     fixedNav(); /* nav固定在上方 */
     goTop(); /* 回到頂部 */
+    scrollDown(); /* 往下滑 */
 });
 
 function fixedNav() {
@@ -45,4 +46,11 @@ function goTop() {
             $('#goTop').stop().fadeOut(200);
         }
     }).scroll();
+};
+
+function scrollDown() {
+    const topSec = $('#section1').offset().top - $('.navbar-toggler').innerHeight();
+    $('#scrollDown').click(function () {
+        $('html,body').animate({ scrollTop: topSec }, 200);
+    });
 };

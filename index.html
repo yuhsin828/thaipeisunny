@@ -21,7 +21,8 @@
 </head>
 
 <body id="1">
-    <header class="hw_100 bg_lattice">
+    <header class="hw_100 bg_lattice position-relative">
+        <!-- main background -->
         <div class="container bg_ctrl">
             <div class="sunny_ctrl">
                 <img class="header_svg img_width" src="./image/00_home/小泰陽.svg" alt="">
@@ -35,7 +36,7 @@
         </div>
 
         <!-- navbar with hambergur and fixed-top -->
-        <nav class="navbar navbar-expand-md navbar-light nav_ctrl mb-5" id="topNav">
+        <nav class="navbar navbar-expand-md navbar-light nav_ctrl" id="topNav">
             <div class="container">
                 <a class="navbar-brand d-none" href="./index.html">
                     <img class="img-fluid" src="./image/logo.svg" alt="" width="80px">
@@ -65,13 +66,19 @@
                 </div>
             </div>
         </nav>
+
+        <!-- scrollDown button -->
+        <div class="down_btn" id="scrollDown" type="button">
+            <i class="fa fa-angle-double-down fs-4" aria-hidden="true"></i>
+        </div>
     </header>
 
     <!-- goTop button -->
-    <button class="top_btn shadow-sm" id="goTop" type="button"><i class="fa fa-angle-up"
-           aria-hidden="true"></i></button>
+    <button class="top_btn shadow-sm" id="goTop" type="button">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
 
-    <section class="bg_light">
+    <section class="bg_light" id="section1">
         <div class="container pt-5">
             <div class="row g-3">
                 <div class="col-sm-6 col-lg-3">
