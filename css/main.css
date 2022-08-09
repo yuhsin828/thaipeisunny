@@ -151,12 +151,12 @@ nav .text_dark:hover {
     left: 50%;
     color: #FA760A;
     transform: translate(-50%, -100%);
-    transition: opacity .4s;
+    transition: opacity 0.4s;
 }
 
 .down_btn i:hover {
-    opacity: .5;
-  }
+    opacity: 0.5;
+}
 
 /*---------------- goTop button ----------------*/
 .top_btn {
@@ -171,20 +171,33 @@ nav .text_dark:hover {
     border-radius: 50%;
 }
 
-/*---------------- card style ----------------*/
-.card_bg {
-    background-color: #FFFEF9;
-    border-radius: 10%;
+/*---------------- card ----------------*/
+.card .text_orange:hover {
+    color: #ffa963;
 }
 
-.card_ic_pos {
-    height: 80px;
-    position: absolute;
-    top: -40px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+/*---------------- section ----------------*/
+.section_btn {
+    background-color: #FA760A;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section_btn:hover {
+    box-shadow: 0px 0px;
+}
+
+section .text_light:hover {
+    color: #FFFEF9;
+}
+
+/*---------------- footer ----------------*/
+footer li .text_light:visited {
+    color: #FFFEF9;
+}
+
+footer li .text_light:hover {
+    color: #F8DE76;
 }
 
 /*---------------- background color ----------------*/
@@ -201,7 +214,7 @@ nav .text_dark:hover {
 }
 
 .bg_lightYellow {
-    background-color: #F7CB0F;
+    background-color: #FFF38A;
 }
 
 .bg_yellow {
@@ -212,19 +225,24 @@ nav .text_dark:hover {
     background-color: #FFFBF3;
 }
 
+.bg_orange {
+    background-color: #FA760A;
+}
+
 /*---------------- text color ----------------*/
 .text_light {
     color: #FFFEF9;
 }
 
-footer li .text_light:visited {
-    color: #FFFEF9;
-}
-
-footer li .text_light:hover {
-    color: #F8DE76;
-}
-
 .text_dark {
     color: #333333;
+}
+
+.text_orange {
+    color: #FA760A;
+}
+
+/*---------------- other styles ----------------*/
+.round_20 {
+    border-radius: 20px;
 }

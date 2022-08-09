@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- style sheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
 
@@ -17,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap"
           rel="stylesheet">
 
-    <title>國北小泰陽學習資源網</title>
+    <title>小泰陽華文樂園</title>
 </head>
 
 <body id="1">
@@ -79,34 +78,115 @@
     </button>
 
     <section class="bg_light" id="section1">
-        <div class="container pt-5">
-            <div class="row g-3">
-                <div class="col-sm-6 col-lg-3">
-                    <a href="./student.html">
-                        <img src="./image/00_home/btn_01_student.png" alt="學生學習區" class="img-fluid">
-                    </a>
+        <div class="container py-5">
+            <div class="">
+                <h3 class="text-center fw-bolder">熱門推薦</h3>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 rounded bg_lightYellow">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bolder">生活華語</h5>
+                            <p class="card-text text-center">#食物 #場所 #交通......</p>
+                            <div class="text-center">
+                                <a class="text-decoration-none text_orange fw-bolder" href="">馬上學習
+                                    <i class="fa fa-arrow-right ms-1" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <a href="./teacher.html">
-                        <img src="./image/00_home/btn_02_teacher.png" alt="教師交流區" class="img-fluid">
-                    </a>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bolder">中華節慶</h5>
+                            <p class="card-text text-center">#春節 #元宵節 #清明節......</p>
+                            <div class="text-center">
+                                <a class="text-decoration-none text_orange fw-bolder" href="">馬上學習
+                                    <i class="fa fa-arrow-right ms-1" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <a href="./recommend.html">
-                        <img src="./image/00_home/btn_03_recommend.png" alt="好站推薦" class="img-fluid">
-                    </a>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bolder">小泰陽故事集</h5>
+                            <p class="card-text text-center">#三隻小豬 #放羊的孩子......</p>
+                            <div class="text-center">
+                                <a class="text-decoration-none text_orange fw-bolder" href="">馬上學習
+                                    <i class="fa fa-arrow-right ms-1" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <a href="https://drive.google.com/drive/u/5/folders/1PZ2xdEBupc0j3_NFL2_Ch7p-gLDAUHYc">
-                        <img src="./image/00_home/btn_04_download.png" alt="下載專區" target="_blank" class="img-fluid">
-                    </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg_light">
+        <div class="container py-5">
+            <div class="row flex-row-reverse justify-content-evenly align-items-center mb-5">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <img class="img-fluid mb-4" src="./image/00_home/ic_01_student.png" alt="" width="360px">
+                </div>
+                <div class="col-md-5">
+                    <h5 class="fw-bolder">學生學習區</h5>
+                    <p>這裡有注音符號、課文唸讀，以及課外學習等豐富的資源，陪伴你一同學習華文！</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="./student.html" class="btn text-end text-decoration-none section_btn text_light"
+                           role="button">去學習</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row justify-content-evenly align-items-center mb-5">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <img class="img-fluid mb-4" src="./image/00_home/ic_02_teacher.png" alt="" width="360px">
+                </div>
+                <div class="col-md-5">
+                    <h5 class="fw-bolder">教師交流區</h5>
+                    <p>小泰陽與您分享我們整理的教學資源，以及教學經驗，一起為認真學習華文的孩子努力！</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="./teacher.html" class="btn text-end text-decoration-none section_btn text_light"
+                           role="button">去交流</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse justify-content-evenly align-items-center mb-5">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <img class="img-fluid mb-4" src="./image/00_home/ic_03_recommend.png" alt="" width="360px">
+                </div>
+                <div class="col-md-5">
+                    <h5 class="fw-bolder">好站推薦</h5>
+                    <p>許多珍貴且實用的學習和教學網站都在這裡，讓認真好學的你能夠有更多元的資源！</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="./recommend.html" class="btn text-end text-decoration-none section_btn text_light"
+                           role="button">去認識</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row justify-content-evenly align-items-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <img class="img-fluid mb-4" src="./image/00_home/ic_04_download.png" alt="" width="360px">
+                </div>
+                <div class="col-md-5">
+                    <h5 class="fw-bolder">下載園區</h5>
+                    <p>小泰陽將學習和教學的資源存放在雲端資料夾裡，歡迎您前往下載，隨時隨地都能使用！</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="btn text-end text-decoration-none section_btn text_light"
+                           role="button">去下載</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="bg_light">
-        <div class="container py-5">
+        <div class="container py-5 border-top border-secondary border-2">
             <div class="row">
                 <div class="col-lg-6 p-3">
                     <img src="./image/00_home/about-us.JPG" alt="關於小泰陽" class=" rounded img-fluid">
@@ -116,7 +196,7 @@
                         <p class="fs-5 fw-bolder notoSerif">關於小泰陽</p>
                         <p class="fs-6 notoSerif">因為愛，我們蛻變，因為責任，我們矢志做到最好；想做得太多，能做得太少，那就勇往直前做到最好！</p>
                         <div class="d-flex justify-content-end">
-                            <a href="./about.html" class="btn bg_lightYellow text-end text-decoration-none fs-6"
+                            <a href="./about.html" class="btn bg_lightYellow text-end text-decoration-none"
                                role="button">了解更多</a>
                         </div>
                     </div>
@@ -144,9 +224,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
     <!-- <script src="./js/headerAndFooter.js"></script> -->
     <script src="./js/main.js"></script>
 
