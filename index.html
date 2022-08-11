@@ -23,14 +23,9 @@
     <header class="hw_100 bg_lattice position-relative">
         <!-- main background -->
         <div class="container bg_ctrl">
-            <div class="sunny_ctrl">
-                <img class="header_svg img_width" src="./image/00_home/小泰陽.svg" alt="">
-            </div>
-            <div class="title_ctrl">
-                <img class="title_svg img_width" src="./image/00_home/小泰陽 華文樂園.svg" alt="">
-            </div>
-            <div class="elephant_ctrl">
-                <img class="header_svg img_width" src="./image/00_home/大象.svg" alt="">
+            <!-- lottie animation -->
+            <div class="wheel_ctrl">
+                <div class="wheel_svg img-fluid" id="ferrisWheel"></div>
             </div>
         </div>
 
@@ -84,6 +79,7 @@
             </div>
 
             <div class="row row-cols-1 row-cols-md-3 g-4 rounded bg_lightYellow">
+                <!-- huayu -->
                 <div class="col mb-4">
                     <div class="card h-100">
                         <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
@@ -97,6 +93,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- holiday -->
                 <div class="col mb-4">
                     <div class="card h-100">
                         <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
@@ -110,6 +107,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- story -->
                 <div class="col mb-4">
                     <div class="card h-100">
                         <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
@@ -124,12 +122,12 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="bg_light">
         <div class="container py-5">
+            <!-- student -->
             <div class="row flex-row-reverse justify-content-evenly align-items-center mb-5">
                 <div class="col-md-5 d-flex justify-content-center">
                     <img class="img-fluid mb-4" src="./image/00_home/ic_01_student.png" alt="" width="360px">
@@ -143,6 +141,7 @@
                     </div>
                 </div>
             </div>
+            <!-- teacher -->
             <div class="row flex-row justify-content-evenly align-items-center mb-5">
                 <div class="col-md-5 d-flex justify-content-center">
                     <img class="img-fluid mb-4" src="./image/00_home/ic_02_teacher.png" alt="" width="360px">
@@ -156,6 +155,7 @@
                     </div>
                 </div>
             </div>
+            <!-- recommend -->
             <div class="row flex-row-reverse justify-content-evenly align-items-center mb-5">
                 <div class="col-md-5 d-flex justify-content-center">
                     <img class="img-fluid mb-4" src="./image/00_home/ic_03_recommend.png" alt="" width="360px">
@@ -169,12 +169,13 @@
                     </div>
                 </div>
             </div>
+            <!-- download -->
             <div class="row flex-row justify-content-evenly align-items-center">
                 <div class="col-md-5 d-flex justify-content-center">
                     <img class="img-fluid mb-4" src="./image/00_home/ic_04_download.png" alt="" width="360px">
                 </div>
                 <div class="col-md-5">
-                    <h5 class="fw-bolder">下載園區</h5>
+                    <h5 class="fw-bolder">下載專區</h5>
                     <p>小泰陽將學習和教學的資源存放在雲端資料夾裡，歡迎您前往下載，隨時隨地都能使用！</p>
                     <div class="d-flex justify-content-center">
                         <a href="" class="btn text-end text-decoration-none section_btn text_light"
@@ -225,8 +226,12 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
+            integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="./js/headerAndFooter.js"></script> -->
     <script src="./js/main.js"></script>
+    <script src="./js/lottie.js"></script>
 
 </body>
 
