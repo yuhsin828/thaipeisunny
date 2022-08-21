@@ -5,6 +5,12 @@ var animation = bodymovin.loadAnimation({
     animType: 'svg', // Required
     prerender: true,
     loop: true, // Optional
-    autoplay: true, // Optional
+    autoplay: false, // Optional
     name: "Hello World", // Name for future reference. Optional.
 })
+
+$('#ferrisWheel').hover(function () {
+    animation.play();
+}, function () {
+    animation.pause();
+});

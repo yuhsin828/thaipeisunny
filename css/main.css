@@ -19,12 +19,13 @@ body {
 }
 
 .bg_lattice {
-    background-image: url(../image/00_home/header_bg.svg);
+    /* background-image: url(../image/00_home/header_bg.svg);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
     /* overflow-y: auto; */
+    background-color: #FEFEFE;
 }
 
 .nav_ctrl {
@@ -126,6 +127,7 @@ nav .text_dark:hover {
         background-color: #F8DE76;
         /* border: 0px; */
         box-shadow: 0px 0px;
+        transition: all 0.4s;
     }
 }
 
@@ -136,11 +138,11 @@ nav .text_dark:hover {
     left: 50%;
     color: #FA760A;
     transform: translate(-50%, -100%);
-    transition: opacity 0.4s;
 }
 
 .down_btn i:hover {
     opacity: 0.5;
+    transition: opacity 0.4s;
 }
 
 /*---------------- goTop button ----------------*/

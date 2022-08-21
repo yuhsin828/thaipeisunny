@@ -1,5 +1,4 @@
 const topNav = $('#topNav').offset().top;
-// console.log(topNav);
 
 $(document).ready(function () {
     fixedNav(); /* nav固定在上方 */
@@ -54,3 +53,21 @@ function scrollDown() {
         $('html,body').animate({ scrollTop: topSec }, 200);
     });
 };
+
+
+$('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        576: {
+            items: 2
+        },
+        768: {
+            items: 3
+        }
+    }
+})

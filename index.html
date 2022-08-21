@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- style sheet -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/vendor/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- font -->
@@ -63,7 +65,7 @@
 
         <!-- scrollDown button -->
         <div class="down_btn" id="scrollDown" type="button">
-            <i class="fa fa-angle-double-down fs-4" aria-hidden="true"></i>
+            <i class="fa fa-angle-double-down fs-3" aria-hidden="true"></i>
         </div>
     </header>
 
@@ -77,10 +79,9 @@
             <div class="">
                 <h3 class="text-center fw-bolder">熱門推薦</h3>
             </div>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4 rounded bg_lightYellow">
+            <div class="rounded bg_lightYellow p-3 owl-carousel owl-theme">
                 <!-- huayu -->
-                <div class="col mb-4">
+                <div class="item">
                     <div class="card h-100">
                         <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -94,7 +95,7 @@
                     </div>
                 </div>
                 <!-- holiday -->
-                <div class="col mb-4">
+                <div class="item">
                     <div class="card h-100">
                         <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -108,7 +109,7 @@
                     </div>
                 </div>
                 <!-- story -->
-                <div class="col mb-4">
+                <div class="item">
                     <div class="card h-100">
                         <img src="./image/00_home/pexels-asad-photo-maldives-457882.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -224,11 +225,11 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/vendor/jquery-3.6.0.min.js"></script>
     <script src="./js/vendor/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
-            integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/vendor/lottie.min.js"></script>
+    <script src="./js/vendor/owl.carousel.min.js"></script>
+
     <!-- <script src="./js/headerAndFooter.js"></script> -->
     <script src="./js/main.js"></script>
     <script src="./js/lottie.js"></script>
