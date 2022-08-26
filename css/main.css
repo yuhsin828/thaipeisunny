@@ -176,6 +176,11 @@ section .text_light:hover {
     color: #FFFEF9;
 }
 
+/*---------------- about ----------------*/
+.text_orange:hover {
+    color: #ffa963;
+}
+
 /*---------------- footer ----------------*/
 footer li .text_light:visited {
     color: #FFFEF9;
