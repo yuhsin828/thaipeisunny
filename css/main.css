@@ -78,9 +78,7 @@ body {
     }
 }
 
-@media screen and (min-width:992px) {
-    
-}
+@media screen and (min-width:992px) {}
 
 /*---------------- navigation ----------------*/
 .nav_top {
@@ -232,4 +230,10 @@ footer li .text_light:hover {
 /*---------------- other styles ----------------*/
 .round_20 {
     border-radius: 20px;
+}
+
+.overflow_dot {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
