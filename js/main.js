@@ -10,7 +10,7 @@ function fixedNav() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > topNav) {  /* 滑動到nav的距離 */
             $('.navbar-brand').removeClass('d-none');
-            $('.navbar').addClass('nav_top bg_lattice shadow-sm');
+            $('.navbar').addClass('nav_top bg_white shadow-sm');
             $('.nav-link').removeClass('nav_btn');
             $('#navList').removeClass('mx-auto nav_list_bg');
             $('#navList').addClass('ms-auto');
@@ -21,7 +21,7 @@ function fixedNav() {
             });
         } else {
             $('.navbar-brand').addClass('d-none');
-            $('.navbar').removeClass('nav_top bg_lattice shadow-sm');
+            $('.navbar').removeClass('nav_top bg_white shadow-sm');
             $('.nav-link').addClass('nav_btn');
             $('#navList').addClass('mx-auto nav_list_bg');
             $('#navList').removeClass('ms-auto');
@@ -54,7 +54,7 @@ function scrollDown() {
     });
 };
 
-
+/* owlCarousel圖卡輪播 */
 $('.owl-carousel').owlCarousel({
     loop: false,
     margin: 10,

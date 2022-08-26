@@ -18,15 +18,14 @@ body {
     width: 100vw;
 }
 
-.bg_lattice {
-    /* background-image: url(../image/00_home/header_bg.svg);
+/* .bg_lattice {
+    background-image: url(../image/00_home/header_bg.svg);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; */
-    /* overflow-y: auto; */
-    background-color: #FEFEFE;
-}
+    background-size: cover;
+    overflow-y: auto;
+} */
 
 .nav_ctrl {
     position: relative;
@@ -95,6 +94,7 @@ nav .text_dark:visited {
 
 nav .text_dark:hover {
     color: #FA760A;
+    transition: all 0.4s;
 }
 
 .nav_list_bg {
@@ -139,15 +139,15 @@ nav .text_dark:hover {
 }
 
 .down_btn i:hover {
-    opacity: 0.5;
-    transition: opacity 0.4s;
+    color: #e36600;
+    transition: all 0.4s;
 }
 
 /*---------------- goTop button ----------------*/
 .top_btn {
     position: fixed;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     bottom: 2rem;
     right: 2rem;
     z-index: 999;
@@ -158,7 +158,8 @@ nav .text_dark:hover {
 
 /*---------------- card ----------------*/
 .card .text_orange:hover {
-    color: #ffa963;
+    color: #e36600;
+    transition: all 0.4s;
 }
 
 /*---------------- section ----------------*/
@@ -169,7 +170,9 @@ nav .text_dark:hover {
 }
 
 .section_btn:hover {
+    background-color: #e36600;
     box-shadow: 0px 0px;
+    transition: all 0.4s;
 }
 
 section .text_light:hover {
@@ -177,8 +180,9 @@ section .text_light:hover {
 }
 
 /*---------------- about ----------------*/
-.text_orange:hover {
-    color: #ffa963;
+article .text_orange:hover {
+    color: #e36600;
+    transition: all 0.4s;
 }
 
 /*---------------- footer ----------------*/
@@ -188,9 +192,14 @@ footer li .text_light:visited {
 
 footer li .text_light:hover {
     color: #F8DE76;
+    transition: all 0.4s;
 }
 
 /*---------------- background color ----------------*/
+.bg_white {
+    background-color: #FEFEFE;
+}
+
 .bg_light {
     background-color: #FFFEF9;
 }
@@ -199,24 +208,8 @@ footer li .text_light:hover {
     background-color: #333333;
 }
 
-.bg_red {
-    background-color: #D99694;
-}
-
-.bg_lightYellow {
+.bg_lemonYellow {
     background-color: #FFF38A;
-}
-
-.bg_yellow {
-    background-color: #F8DE76;
-}
-
-.bg_lighter {
-    background-color: #FFFBF3;
-}
-
-.bg_orange {
-    background-color: #FA760A;
 }
 
 /*---------------- text color ----------------*/
@@ -243,7 +236,7 @@ footer li .text_light:hover {
     white-space: nowrap;
 }
 
-.overflow_lines_dot{
+.overflow_lines_dot {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
