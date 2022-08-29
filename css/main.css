@@ -12,82 +12,7 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-/*---------------- main background ----------------*/
-.hw_100 {
-    height: 100vh;
-    width: 100vw;
-}
-
-/* .bg_lattice {
-    background-image: url(../image/00_home/header_bg.svg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow-y: auto;
-} */
-
-.nav_ctrl {
-    position: relative;
-    z-index: 99;
-}
-
-.bg_ctrl {
-    height: 50%;
-    width: 100%;
-    position: relative;
-}
-
-.wheel_ctrl {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.wheel_svg {
-    height: 280px;
-    width: 280px;
-}
-
-@media screen and (min-width:576px) {
-    .bg_ctrl {
-        height: 60%;
-    }
-
-    .wheel_ctrl {
-        left: 30%;
-    }
-
-    .wheel_svg {
-        height: 320px;
-        width: 320px;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .bg_ctrl {
-        height: 70%;
-    }
-
-    .wheel_svg {
-        height: 400px;
-        width: 400px;
-    }
-}
-
-@media screen and (min-width:992px) {}
-
 /*---------------- navigation ----------------*/
-.nav_top {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-}
-
 nav .text_dark:visited {
     color: #333333;
 }
@@ -97,55 +22,9 @@ nav .text_dark:hover {
     transition: all 0.4s;
 }
 
-.nav_list_bg {
-    background-color: rgba(255, 251, 243, 0.8);
-}
-
 @media screen and (min-width:768px) {
-    .nav_list_bg {
-        background-color: rgba(255, 251, 243, 0);
-    }
-
     .w_150 {
         width: 150px;
-    }
-
-    nav .text_dark:hover {
-        color: #333333;
-    }
-
-    .nav_btn {
-        background-color: #FFF9E1;
-        border: #333333 solid 1px;
-        border-radius: 20px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    .nav_btn:hover {
-        background-color: #F8DE76;
-        /* border: 0px; */
-        box-shadow: 0px 0px;
-        transition: all 0.4s;
-    }
-}
-
-/*---------------- scrollDown button ----------------*/
-.down_btn i {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    color: #FA760A;
-    transform: translate(-50%, -100%);
-}
-
-.down_btn i:hover {
-    color: #e36600;
-    transition: all 0.4s;
-}
-
-@media screen and (min-width:768px) {
-    .down_btn i {
-        bottom: 0;
     }
 }
 
@@ -160,35 +39,6 @@ nav .text_dark:hover {
     background-color: #F8DE76;
     border: 0;
     border-radius: 50%;
-}
-
-/*---------------- card ----------------*/
-.card .text_orange:hover {
-    color: #e36600;
-    transition: all 0.4s;
-}
-
-/*---------------- section ----------------*/
-.section_btn {
-    background-color: #FA760A;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.section_btn:hover {
-    background-color: #e36600;
-    box-shadow: 0px 0px;
-    transition: all 0.4s;
-}
-
-section .text_light:hover {
-    color: #FFFEF9;
-}
-
-/*---------------- about ----------------*/
-article .text_orange:hover {
-    color: #e36600;
-    transition: all 0.4s;
 }
 
 /*---------------- footer ----------------*/
