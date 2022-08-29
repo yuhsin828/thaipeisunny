@@ -36,7 +36,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav row ms-auto" id="navList">
-                    <li class="nav-item col-sm-6 col-md-3"><a class="nav-link text-center m-auto text_dark w_150"
+                    <li class="nav-item col-sm-6 col-md-3"><a class="nav-link text-center m-auto text_dark w_150 active"
                            href="./student.html">學生學習區</a></li>
                     <li class="nav-item col-sm-6 col-md-3"><a class="nav-link text-center m-auto text_dark w_150"
                            href="./teacher.html">教師交流區</a></li>
@@ -57,51 +57,66 @@
 
     <section class="bg_lemonYellow">
         <div class="container py-5">
-            <div class="row g-5">
+            <!-- breadcrumb -->
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb d-flex align-items-center">
+                    <li class="breadcrumb-item"><a class="text-decoration-none text_dark" href="./index.html">首頁</a>
+                    </li>
+                    <li class="breadcrumb-item text_dark active" aria-current="page">學生學習區</li>
+                </ol>
+            </div>
+
+            <div class="row g-3 g-lg-5 justify-content-center">
                 <!-- 課內學習 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="p-3 card_bg position-relative text-center">
-                        <img src="./image/01_student/ic_in.png" alt="課內學習" class="img-fluid card_ic_pos">
-                        <img src="./image/01_student/title_in.png" alt="課內學習" class="img-fluid mb-2 mt-4">
-                        <a href="#">
-                            <img src="./image/01_student/btn_in_zuyin.png" alt="注音符號學習" class="img-fluid mb-2">
+                <div class="col-sm-6 col-lg-4 my-5">
+                    <div class="p-3 position-relative text-center bg_light round_20">
+                        <div class="menu_ic_pos">
+                            <img class="img-fluid ic_ctrl" src="./image/01_student/ic_in.png" alt="課內學習">
+                        </div>
+                        <img class="img-fluid mb-3 mt-4" src="./image/01_student/title_in.svg" alt="課內學習">
+
+                        <a class="" href="#">
+                            <div class="p-2 bg_lightBlue round_20 menu_item mb-3">
+                                <img class="img-fluid" src="./image/01_student/btn_in_zuyin.svg" alt="注音符號">
+                            </div>
                         </a>
-                        <a href="#">
-                            <img src="./image/01_student/btn_in_kid.png" alt="華語讀本唸讀" class="img-fluid mb-2">
+                        <a class="" href="#">
+                            <div class="p-2 bg_lightBlue round_20 menu_item mb-3">
+                                <img class="img-fluid" src="./image/01_student/btn_in_kid.svg" alt="幼兒園讀本唸讀">
+                            </div>
                         </a>
-                        <a href="#">
-                            <img src="./image/01_student/btn_in_elementary.png" alt="華文課本唸讀" class="img-fluid mb-2">
+                        <a class="" href="#">
+                            <div class="p-2 bg_lightBlue round_20 menu_item mb-3">
+                                <img class="img-fluid" src="./image/01_student/btn_in_elementary.svg" alt="小學部課本唸讀">
+                            </div>
                         </a>
                     </div>
                 </div>
                 <!-- 課外學習 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="p-3 card_bg position-relative text-center">
-                        <img src="./image/01_student/ic_out.png" alt="課外學習" class="img-fluid card_ic_pos">
-                        <img src="./image/01_student/title_out.png" alt="課外學習" class="img-fluid mb-2 mt-4">
-                        <a href="#">
-                            <img src="./image/01_student/btn_out_story.png" alt="小泰陽故事集" class="img-fluid mb-2">
-                        </a>
-                        <a href="#">
-                            <img src="./image/01_student/btn_out_huayu.png" alt="生活華語" class="img-fluid mb-2">
-                        </a>
-                        <a href="#">
-                            <img src="./image/01_student/btn_out_holiday.png" alt="中華節慶" class="img-fluid mb-2">
-                        </a>
-                    </div>
-                </div>
-                <!-- Facebook社團 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="p-3 card_bg position-relative text-center">
-                        <img src="./image/01_student/ic_fb.png" alt="Facebook社團" class="img-fluid card_ic_pos">
-                        <img src="./image/01_student/title_fb.png" alt="Facebook社團" class="img-fluid mb-2 mt-4">
-                        <img src="./image/01_student/text_fb.png" alt="Facebook社團" class="img-fluid mb-2">
-                        <a href="#">
-                            <img src="./image/01_student/btn_fb.png" alt="加入社團" class="img-fluid mb-2">
-                        </a>
-                    </div>
-                </div>
+                <div class="col-sm-6 col-lg-4 my-5">
+                    <div class="p-3 position-relative text-center bg_light round_20">
+                        <div class="menu_ic_pos">
+                            <img class="img-fluid ic_ctrl" src="./image/01_student/ic_out.png" alt="課外學習">
+                        </div>
+                        <img class="img-fluid mb-3 mt-4" src="./image/01_student/title_out.svg" alt="課外學習">
 
+                        <a class="" href="#">
+                            <div class="p-2 bg_lightBlue round_20 menu_item mb-3">
+                                <img class="img-fluid" src="./image/01_student/btn_out_story.svg" alt="小泰陽故事集">
+                            </div>
+                        </a>
+                        <a class="" href="#">
+                            <div class="p-2 bg_lightBlue round_20 menu_item mb-3">
+                                <img class="img-fluid" src="./image/01_student/btn_out_huayu.svg" alt="生活華語">
+                            </div>
+                        </a>
+                        <a class="" href="#">
+                            <div class="p-2 bg_lightBlue round_20 menu_item mb-3">
+                                <img class="img-fluid" src="./image/01_student/btn_out_holiday.svg" alt="中華節慶">
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -131,7 +146,6 @@
 
     <!-- <script src="./js/headerAndFooter.js"></script> -->
     <script src="./js/main.js"></script>
-    <script src="./js/lottie.js"></script>
 
 </body>
 

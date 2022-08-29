@@ -18,8 +18,17 @@ nav .text_dark:visited {
 }
 
 nav .text_dark:hover {
-    color: #FA760A;
+    color: #e36600;
     transition: all 0.4s;
+}
+
+nav ul .active {
+    color: #FA760A !important;
+}
+
+nav ul .active:hover {
+    color: #e36600 !important;
+    transition: all 0.4s !important;
 }
 
 @media screen and (min-width:768px) {
@@ -39,6 +48,33 @@ nav .text_dark:hover {
     background-color: #F8DE76;
     border: 0;
     border-radius: 50%;
+}
+
+/*---------------- breadcrumb ----------------*/
+.breadcrumb-item a:hover {
+    color: #666666;
+    transition: all 0.4s;
+}
+
+/*---------------- section menu ----------------*/
+.ic_ctrl {
+    height: 100px;
+}
+
+.menu_ic_pos {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+
+.menu_item {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu_item:hover {
+    box-shadow: none;
+    transition: all 0.4s;
 }
 
 /*---------------- footer ----------------*/
@@ -70,6 +106,10 @@ footer li .text_light:hover {
 
 .bg_lightYellow {
     background-color: #FFF9E1;
+}
+
+.bg_lightBlue {
+    background-color: #ACE6FF;
 }
 
 /*---------------- text color ----------------*/

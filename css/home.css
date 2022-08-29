@@ -110,7 +110,7 @@ nav .text_dark:hover {
     .nav_btn:hover {
         background-color: #F8DE76;
         /* border: 0px; */
-        box-shadow: 0px 0px;
+        box-shadow: none;
         transition: all 0.4s;
     }
 }
@@ -150,7 +150,7 @@ nav .text_dark:hover {
 
 .section_btn:hover {
     background-color: #e36600;
-    box-shadow: 0px 0px;
+    box-shadow: none;
     transition: all 0.4s;
 }
 
