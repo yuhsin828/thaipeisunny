@@ -132,7 +132,7 @@ nav .text_dark:hover {
 /*---------------- scrollDown button ----------------*/
 .down_btn i {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     left: 50%;
     color: #FA760A;
     transform: translate(-50%, -100%);
@@ -141,6 +141,12 @@ nav .text_dark:hover {
 .down_btn i:hover {
     color: #e36600;
     transition: all 0.4s;
+}
+
+@media screen and (min-width:768px) {
+    .down_btn i {
+        bottom: 0;
+    }
 }
 
 /*---------------- goTop button ----------------*/
@@ -210,6 +216,10 @@ footer li .text_light:hover {
 
 .bg_lemonYellow {
     background-color: #FFF38A;
+}
+
+.bg_lightYellow {
+    background-color: #FFF9E1;
 }
 
 /*---------------- text color ----------------*/
