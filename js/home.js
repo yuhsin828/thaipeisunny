@@ -15,7 +15,7 @@ function fixedNav() {
             $('#navList').removeClass('mx-auto nav_list_bg');
             $('#navList').addClass('ms-auto');
             $('nav .text_dark').hover(function () {
-                $(this).css('color', '#FA760A');
+                $(this).css('color', '#e36600');
             }, function () {
                 $(this).css('color', '#333333');
             });

@@ -79,7 +79,7 @@ nav .text_dark:visited {
 }
 
 nav .text_dark:hover {
-    color: #FA760A;
+    color: #e36600;
     transition: all 0.4s;
 }
 
@@ -156,6 +156,11 @@ nav .text_dark:hover {
 
 section .text_light:hover {
     color: #FFFEF9;
+}
+
+section .text_orange:hover {
+    color: #e36600;
+    transition: all 0.4s;
 }
 
 /*---------------- about ----------------*/
