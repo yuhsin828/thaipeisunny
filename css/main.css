@@ -12,6 +12,10 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
+.listStyleNone{
+    list-style-type: none;
+}
+
 /*---------------- navigation ----------------*/
 nav .text_dark:visited {
     color: #333333;
