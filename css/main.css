@@ -165,5 +165,6 @@ aside .text_dark:visited {
 
 aside .text_dark:hover {
     background-color: #FFF38A;
+    color: #333333;
     transition: all 0.4s;
 }

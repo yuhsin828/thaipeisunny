@@ -36,15 +36,20 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav row ms-auto" id="navList">
-                    <li class="nav-item col-sm-6 col-md-3"><a class="nav-link text-center m-auto text_dark w_150"
-                           href="./student.html">學生學習區</a></li>
-                    <li class="nav-item col-sm-6 col-md-3"><a class="nav-link text-center m-auto text_dark w_150"
-                           href="./teacher.html">教師交流區</a></li>
-                    <li class="nav-item col-sm-6 col-md-3"><a class="nav-link text-center m-auto text_dark w_150"
-                           href="./recommend.html">好站推薦</a></li>
-                    <li class="nav-item col-sm-6 col-md-3"><a class="nav-link text-center m-auto text_dark w_150"
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150" href="./student.html">學生學習區</a>
+                    </li>
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150" href="./teacher.html">教師交流區</a>
+                    </li>
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150" href="./recommend.html">好站推薦</a>
+                    </li>
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150"
                            href="https://drive.google.com/drive/u/5/folders/1PZ2xdEBupc0j3_NFL2_Ch7p-gLDAUHYc"
-                           target="_blank">下載專區</a></li>
+                           target="_blank">下載專區</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -60,14 +65,15 @@
             <!-- breadcrumb -->
             <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb d-flex align-items-center">
-                    <li class="breadcrumb-item"><a class="text-decoration-none text_dark" href="./index.html">首頁</a>
+                    <li class="breadcrumb-item">
+                        <a class="text-decoration-none text_dark" href="./index.html">首頁</a>
                     </li>
                     <li class="breadcrumb-item text_dark active" aria-current="page">關於小泰陽</li>
                 </ol>
             </div>
 
-            <div class="row">
-                <aside class="col-md-3">
+            <div class="row position-relative">
+                <!-- <aside class="col-md-3">
                     <ul class="px-2 py-3 listStyleNone border round_20">
                         <li class="nav-item border-bottom"><a class="nav-link text-decoration-none text_dark"
                                href="#list-item-1">關於我們</a></li>
@@ -78,18 +84,29 @@
                         <li class="nav-item"><a class="nav-link text-decoration-none text_dark"
                                href="#list-item-4">聯絡我們</a></li>
                     </ul>
-                </aside>
-
-                <!-- <aside class="col-md-3">
-                    <ul class="list-group list-group-flush bg_light round_20">
-                        <a class="list-group-item list-group-item-action active" href="#list-item-1">關於我們</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-2">網站緣起</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-3">網站沿革</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-4">聯絡我們</a>
-                    </ul>
                 </aside> -->
 
+                <!-- 快速選單 -->
+                <aside class="col-md-3 aside_fixed">
+                    <ul class="nav flex-md-column px-2 py-3 listStyleNone">
+                        <li class="nav-item border-bottom col-6 col-sm-3 col-md-12 text-center">
+                            <a class="nav-link text-decoration-none text_dark" href="#list-item-1">關於我們</a>
+                        </li>
+                        <li class="nav-item border-bottom col-6 col-sm-3 col-md-12 text-center">
+                            <a class="nav-link text-decoration-none text_dark" href="#list-item-2">網站緣起</a>
+                        </li>
+                        <li class="nav-item border-bottom col-6 col-sm-3 col-md-12 text-center">
+                            <a class="nav-link text-decoration-none text_dark" href="#list-item-3">網站沿革</a>
+                        </li>
+                        <li class="nav-item border-bottom col-6 col-sm-3 col-md-12 text-center">
+                            <a class="nav-link text-decoration-none text_dark" href="#list-item-4">聯絡我們</a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- 內容 -->
                 <article class="col-md-9 lh-lg">
+                    <!-- 關於我們 -->
                     <div class="pb-3" id="list-item-1">
                         <h4 class="p-2 fw-bolder bg_lemonYellow">關於我們</h4>
 
@@ -112,7 +129,7 @@
                             我們是──國北小泰陽。
                         </p>
                     </div>
-
+                    <!-- 網站緣起 -->
                     <div class="py-3" id="list-item-2">
                         <h4 class="p-2 fw-bolder bg_lemonYellow">網站緣起</h4>
 
@@ -133,7 +150,7 @@
                             無論未來團隊是否能夠順利出團至當地服務，學習資源網將會是小泰陽長期經營、持續更新的線上平臺，與泰北師生共創友善的華文學習園地。藉由網路的無遠弗屆，縮短我們與泰北之間的距離，傳遞我們對泰北的關心。
                         </p>
                     </div>
-
+                    <!-- 網站沿革 -->
                     <div class="py-3" id="list-item-3">
                         <h4 class="p-2 fw-bolder bg_lemonYellow">網站沿革</h4>
 
@@ -160,7 +177,7 @@
                             在Google雲端硬碟設立資料夾，將團隊所製作的華文學習與教學資源相關檔案置於其中，包含華文讀本與課文唸讀之音檔、華文教材對照表與附錄等。期待華校師生能夠運用這些資源，增進學習與教學。
                         </p>
                     </div>
-
+                    <!-- 聯絡我們 -->
                     <div class="py-3" id="list-item-4">
                         <h4 class="p-2 fw-bolder bg_lemonYellow">聯絡我們</h4>
 
@@ -187,7 +204,6 @@
                             </a>
                         </div>
                     </div>
-
                 </article>
             </div>
         </div>
@@ -200,8 +216,8 @@
                     <img class="img-fluid" src="./image/小泰陽華文樂園logo_l.svg" alt="小泰陽華文樂園logo" width="280px">
                 </div>
                 <ul class="nav d-flex justify-content-between">
-                    <li class="nav-item"><a class="nav-link text_light" href="#">著作權宣告</a></li>
                     <li class="nav-item"><a class="nav-link text_light" href="#">網站導覽</a></li>
+                    <li class="nav-item"><a class="nav-link text_light" href="#">著作權宣告</a></li>
                     <li class="nav-item"><a class="nav-link text_light" href="./about.html">關於小泰陽</a></li>
                 </ul>
             </div>
