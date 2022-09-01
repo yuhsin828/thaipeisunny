@@ -35,7 +35,7 @@ function fixedNav() {
 }
 
 function scrollDown() {
-    const topSec = $('#section1').offset().top - $('.navbar-toggler').innerHeight();
+    const topSec = $('#section1').offset().top - $('.navbar').innerHeight();
     $('#scrollDown').click(function () {
         $('html,body').animate({ scrollTop: topSec }, 200);
     });
