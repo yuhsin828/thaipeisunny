@@ -132,7 +132,7 @@ footer li .text_light:hover {
 
 /*---------------- other styles ----------------*/
 .round_20 {
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 
 .overflow_dot {
