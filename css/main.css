@@ -149,6 +149,18 @@ footer li .text_light:hover {
     -webkit-box-orient: vertical;
 }
 
+.btn_disable {
+    background-color: #dddddd;
+}
+
+.pointer_none {
+    pointer-events: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 /*---------------- about page ----------------*/
 article .text_dark:visited {
     color: #333333;

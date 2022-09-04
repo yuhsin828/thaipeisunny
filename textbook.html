@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <title>小學部課文唸讀｜小泰陽華文樂園</title>
+</head>
+
+<body id="">
+    <!-- navbar with hambergur and fixed-top -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top shadow-sm bg_white" id="topNav">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img class="img-fluid" src="./image/小泰陽華文樂園logo_d.svg" alt="小泰陽華文樂園logo" width="280px">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav row ms-auto" id="navList">
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150 active" href="./student.html">學生學習區</a>
+                    </li>
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150" href="./teacher.html">教師交流區</a>
+                    </li>
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150" href="./recommend.html">好站推薦</a>
+                    </li>
+                    <li class="nav-item col-sm-6 col-md-3">
+                        <a class="nav-link text-center m-auto text_dark w_150"
+                           href="https://drive.google.com/drive/u/5/folders/1PZ2xdEBupc0j3_NFL2_Ch7p-gLDAUHYc"
+                           target="_blank">下載專區</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- goTop button -->
+    <button class="shadow top_btn" id="goTop" type="button">
+        <i class="fa fa-angle-up fs-3 text_dark" aria-hidden="true"></i>
+    </button>
+
+    <main class="bg_lemonYellow">
+        <div class="container py-5">
+            <!-- breadcrumb -->
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb d-flex align-items-center">
+                    <li class="breadcrumb-item">
+                        <a class="text-decoration-none text_dark" href="./index.html">首頁</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="text-decoration-none text_dark" href="./student.html">學生學習區</a>
+                    </li>
+                    <li class="breadcrumb-item text_dark active" aria-current="page">小學部課文唸讀</li>
+                </ol>
+            </div>
+
+            <!-- tab標籤切換鈕 -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first"
+                            type="button" role="tab" aria-controls="first" aria-selected="true">
+                        <img class="img-fluid" src="./image/01_student/03_textbook/一年級.svg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button"
+                            role="tab" aria-controls="second" aria-selected="false">
+                        <img class="img-fluid" src="./image/01_student/03_textbook/二年級.svg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button"
+                            role="tab" aria-controls="third" aria-selected="false">
+                        <img class="img-fluid" src="./image/01_student/03_textbook/三年級.svg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button"
+                            role="tab" aria-controls="fourth" aria-selected="false">
+                        <img class="img-fluid" src="./image/01_student/03_textbook/四年級.svg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fifth-tab" data-bs-toggle="tab" data-bs-target="#fifth" type="button"
+                            role="tab" aria-controls="fifth" aria-selected="false">
+                        <img class="img-fluid" src="./image/01_student/03_textbook/五年級.svg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sixth-tab" data-bs-toggle="tab" data-bs-target="#sixth" type="button"
+                            role="tab" aria-controls="sixth" aria-selected="false">
+                        <img class="img-fluid" src="./image/01_student/03_textbook/六年級.svg" alt="">
+                    </button>
+                </li>
+
+            </ul>
+
+            <!-- tab標籤切換頁面 -->
+            <div class="tab-content bg_white" id="myTabContent">
+                <div class="tab-pane fade py-3 px-3 px-lg-5 show active" id="first" role="tabpanel"
+                     aria-labelledby="first-tab">
+                    <!-- 播放器 -->
+                    <div class="row justify-content-center mb-3">
+                        <audio src="./image/01_student/03_textbook/一上 L1.wav" controls></audio>
+                    </div>
+
+                    <!-- 上學期 -->
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="./image/01_student/03_textbook/上學期.svg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 gap-sm-3 mb-5">
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                    </div>
+
+                    <!-- 下學期 -->
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="./image/01_student/03_textbook/下學期.svg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 gap-sm-3 mb-5">
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                        <div class="bg_lightBlue round_20 menu_item pointer">
+                            <img class="img-fluid" src="./image/01_student/03_textbook/第一課.svg" alt="小學部課本唸讀">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">...</div>
+                <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">...</div>
+                <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">...</div>
+                <div class="tab-pane fade" id="fifth" role="tabpanel" aria-labelledby="fifth-tab">...</div>
+                <div class="tab-pane fade" id="sixth" role="tabpanel" aria-labelledby="sixth-tab">...</div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg_dark">
+        <div class="container py-5">
+            <div class="d-flex justify-content-evenly align-items-center mb-2">
+                <div class="">
+                    <img class="img-fluid" src="./image/小泰陽華文樂園logo_l.svg" alt="小泰陽華文樂園logo" width="280px">
+                </div>
+                <ul class="nav d-flex justify-content-between">
+                    <li class="nav-item"><a class="nav-link text_light" href="./guide.html">網站導覽</a></li>
+                    <li class="nav-item"><a class="nav-link text_light" href="./copyright.html">著作權宣告</a></li>
+                    <li class="nav-item"><a class="nav-link text_light" href="./about.html">關於小泰陽</a></li>
+                </ul>
+            </div>
+            <div class="border-top">
+                <p class="text-center mt-2 text_light">Copyright © 2022 國北小泰陽 Thaipei Sunny</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/lottie.min.js"></script>
+    <script src="./js/vendor/owl.carousel.min.js"></script>
+
+    <!-- <script src="./js/headerAndFooter.js"></script> -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
