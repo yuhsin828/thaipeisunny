@@ -225,9 +225,38 @@ aside .text_dark:hover {
 /*---------------- textbook page ----------------*/
 .player_pos {
     position: fixed;
-    width: 100%;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 6rem;
+    right: -60%;
+    /* transform: translateX(80%); */
     z-index: 998;
+}
+
+.player_pos:hover {
+    right: 0;
+    z-index: 1000;
+    transition: all 0.4s;
+}
+
+@media screen and (min-width:425px) {
+    .player_pos {
+        right: -40%;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .player_pos {
+        right: -30%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .player_pos {
+        right: -20%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .player_pos {
+        right: -10%;
+    }
 }
