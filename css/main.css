@@ -73,11 +73,16 @@ nav ul .active:hover {
     right: 0;
 }
 
-.menu_item {
+.box_shadow_4 {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.menu_item:hover {
+.box_shadow_2 {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.box_shadow_4,
+.box_shadow_2:hover {
     box-shadow: none;
     transition: all 0.4s;
 }
@@ -113,8 +118,40 @@ footer li .text_light:hover {
     background-color: #FFF9E1;
 }
 
-.bg_lightBlue {
+.bg_beachBlue {
     background-color: #ACE6FF;
+}
+
+.bg_pink {
+    background-color: #FF7BDA;
+}
+
+.bg_lightPink {
+    background-color: #FFDBF0;
+}
+
+.bg_green {
+    background-color: #A7F642;
+}
+
+.bg_lightGreen {
+    background-color: #D0F9AF;
+}
+
+.bg_blue {
+    background-color: #62E9EF;
+}
+
+.bg_lightBlue {
+    background-color: #BBF5F8;
+}
+
+.bg_orange{
+    background-color: #FC987A;
+}
+
+.bg_lightOrange{
+    background-color: #FCE9DB;
 }
 
 /*---------------- text color ----------------*/
@@ -133,6 +170,10 @@ footer li .text_light:hover {
 /*---------------- other styles ----------------*/
 .round_20 {
     border-radius: 1rem;
+}
+
+.round_50 {
+    border-radius: 50%;
 }
 
 .overflow_dot {
