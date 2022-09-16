@@ -4,15 +4,6 @@
     width: 100vw;
 }
 
-/* .bg_lattice {
-    background-image: url(../image/00_home/header_bg.svg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow-y: auto;
-} */
-
 .nav_ctrl {
     position: relative;
     z-index: 99;
@@ -27,14 +18,35 @@
 .wheel_ctrl {
     position: absolute;
     z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.wheel_svg {
+    width: 280px;
+}
+
+.welcome_ctrl {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slogan_ctrl {
+    position: absolute;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.wheel_svg {
-    height: 280px;
-    width: 280px;
+@media screen and (min-width:375px) {
+    .slogan_ctrl {
+        top: 60%;
+    }
 }
 
 @media screen and (min-width:576px) {
@@ -43,12 +55,22 @@
     }
 
     .wheel_ctrl {
+        top: 50%;
         left: 30%;
+        transform: translate(-50%, -50%);
     }
 
     .wheel_svg {
-        height: 320px;
         width: 320px;
+    }
+
+    .welcome_ctrl {
+        transform: translate(0%, -50%);
+    }
+
+    .slogan_ctrl {
+        top: 55%;
+        transform: translate(0%, -50%);
     }
 }
 
@@ -58,12 +80,19 @@
     }
 
     .wheel_svg {
-        height: 400px;
         width: 400px;
     }
 }
 
-@media screen and (min-width:992px) {}
+@media screen and (min-width:992px) {
+    .welcome_ctrl {
+        top: 50%;
+    }
+
+    .slogan_ctrl {
+        top: 65%;
+    }
+}
 
 /*---------------- navigation ----------------*/
 .nav_top {

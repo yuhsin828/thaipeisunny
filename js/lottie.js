@@ -1,7 +1,7 @@
 
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('ferrisWheel'), // Required
-    path: '../json/ferrisWheel.json', // Required
+    path: '../json/ferrisWheelWithElephant.json', // Required
     animType: 'svg', // Required
     prerender: true,
     loop: true, // Optional
