@@ -4,93 +4,33 @@
     width: 100vw;
 }
 
-.nav_ctrl {
-    position: relative;
-    z-index: 99;
-}
-
-.bg_ctrl {
-    height: 50%;
-    width: 100%;
-    position: relative;
-}
-
-.wheel_ctrl {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
 .wheel_svg {
-    width: 280px;
+    width: 360px;
 }
 
-.welcome_ctrl {
-    position: absolute;
-    z-index: 2;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.slogan_ctrl {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media screen and (min-width:375px) {
-    .slogan_ctrl {
-        top: 60%;
-    }
+.welcome_svg,
+.slogan_svg {
+    width: 240px;
 }
 
 @media screen and (min-width:576px) {
-    .bg_ctrl {
-        height: 60%;
-    }
 
-    .wheel_ctrl {
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-    }
-
-    .wheel_svg {
-        width: 320px;
-    }
-
-    .welcome_ctrl {
-        transform: translate(0%, -50%);
-    }
-
-    .slogan_ctrl {
-        top: 55%;
-        transform: translate(0%, -50%);
+    .welcome_svg,
+    .slogan_svg {
+        width: 360px;
     }
 }
 
-@media screen and (min-width:768px) {
-    .bg_ctrl {
-        height: 70%;
-    }
+@media screen and (min-width:768px) {}
 
+@media screen and (min-width:1200px) {
     .wheel_svg {
-        width: 400px;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .welcome_ctrl {
-        top: 50%;
+        width: 480px;
     }
 
-    .slogan_ctrl {
-        top: 65%;
+    .welcome_svg,
+    .slogan_svg {
+        width: 480px;
     }
 }
 
@@ -147,7 +87,7 @@ nav .text_dark:hover {
 /*---------------- scrollDown button ----------------*/
 .down_btn i {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     color: #FA760A;
     transform: translate(-50%, -100%);
@@ -158,7 +98,7 @@ nav .text_dark:hover {
     transition: all 0.4s;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:576px) {
     .down_btn i {
         bottom: 0;
     }
