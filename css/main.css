@@ -18,6 +18,10 @@ body {
 }
 
 /*---------------- navigation ----------------*/
+/* nav .navbar-brand .img-fluid {
+    max-width: 250px;
+} */
+
 nav .text_dark:visited {
     color: #333333;
 }
