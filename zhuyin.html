@@ -215,7 +215,7 @@
      }
 
      function showPic(id2) {
-          $('#mainPic').attr("src", '/images/zhuyin/mainPic/A_' + id2 + '_a.jpg');
+          $('#mainPic').attr("src", './images/zhuyin/mainPic/A_' + id2 + '_a.jpg');
      }
 
      function changeMainPic(n) {
@@ -236,7 +236,7 @@
                     imgType = '.jpg';
                     break;
           }
-          $('#mainPic').attr("src", '/images/zhuyin/mainPic/A_' + letter + '_' + n + imgType);
+          $('#mainPic').attr("src", './images/zhuyin/mainPic/A_' + letter + '_' + n + imgType);
      }
 
      function clearRight(n) {
@@ -275,13 +275,13 @@
 
           $('#audio' + n).attr("autoplay", "");
           if (parseInt(n) + voice == 1) {
-               $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_m_ab.mp3');
+               $('#audio' + n).attr("src", './images/zhuyin/audio/A_' + letter + '_m_ab.mp3');
           } else if (parseInt(n) + voice == 2 && voice == 0) {
-               $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_w_ab.mp3');
+               $('#audio' + n).attr("src", './images/zhuyin/audio/A_' + letter + '_w_ab.mp3');
           } else if (parseInt(n) + voice == 2 && voice == 1) {
-               $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_m_c.mp3');
+               $('#audio' + n).attr("src", './images/zhuyin/audio/A_' + letter + '_m_c.mp3');
           } else if (parseInt(n) + voice == 3) {
-               $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_w_c.mp3');
+               $('#audio' + n).attr("src", './images/zhuyin/audio/A_' + letter + '_w_c.mp3');
           }
           $('#play' + n).addClass('bg_orange');
      }
