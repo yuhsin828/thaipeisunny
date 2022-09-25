@@ -57,3 +57,8 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+/* 啟動wow */
+$(function () {
+    new WOW().init();
+})
