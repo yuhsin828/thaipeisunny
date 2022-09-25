@@ -86,11 +86,11 @@ nav .text_dark:hover {
 
 /*---------------- scrollDown button ----------------*/
 .down_btn i {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
+    /* position: absolute; */
+    /* bottom: 5%; */
+    /* left: 50%; */
     color: #FA760A;
-    transform: translate(-50%, -100%);
+    /* transform: translate(-50%, -100%); */
 }
 
 .down_btn i:hover {
@@ -100,7 +100,7 @@ nav .text_dark:hover {
 
 @media screen and (min-width:576px) {
     .down_btn i {
-        bottom: 0;
+        /* bottom: 0; */
     }
 }
 

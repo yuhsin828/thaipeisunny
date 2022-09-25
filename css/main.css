@@ -71,10 +71,7 @@ nav ul .active:hover {
 }
 
 .menu_ic_pos {
-    position: absolute;
-    top: -50px;
-    left: 0;
-    right: 0;
+    margin-top: -70px;
 }
 
 /*---------------- footer ----------------*/

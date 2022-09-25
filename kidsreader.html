@@ -146,6 +146,14 @@
 </html>
 
 <script>
+    defaultLesson();
+
+    function defaultLesson() {
+        $('#btn1').removeClass('bg_lightPink');
+        $('#btn1').addClass('bg_pink');
+        $('#audio1').attr("src", './wav/kidsreader/1_L1-6.wav');
+    }
+
     function lessonClick(semester, start, end, btn) {
         for (let i = 1; i <= 5; i++) {
             $('#btn' + i).removeClass('bg_pink');
