@@ -1,9 +1,8 @@
-const topNav = $('#topNav').offset().top;
+// const topNav = $('#topNav').offset().top;
 
 $(document).ready(function () {
     fixedNav(); /* nav固定在上方 */
     scrollDown(); /* 往下滑 */
-    goTop(); /* 回到頂部 */
 });
 
 function fixedNav() {
@@ -39,19 +38,6 @@ function scrollDown() {
         const topSec = $('#section1').offset().top - $('.navbar').innerHeight();
         $('html,body').animate({ scrollTop: topSec }, 200);
     });
-};
-
-function goTop() {
-    $('#goTop').click(function () {
-        $('html,body').animate({ scrollTop: 0 }, 200);
-    });
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > topNav) {
-            $('#goTop').fadeIn(200);
-        } else {
-            $('#goTop').stop().fadeOut(200);
-        }
-    }).scroll();
 };
 
 /* owlCarousel圖卡輪播 */

@@ -1,4 +1,4 @@
-const topNav = $('#topNav').offset().top;
+// const topNav = $('#topNav').offset().top;
 
 $(document).ready(function () {
     goTop(); /* 回到頂部 */
