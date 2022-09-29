@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div class="video_container mb-5 d-none">
+                <div class="video_ctrl mb-5 d-none">
                     <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -141,10 +141,10 @@
 
 <script>
     function storyClick(id) {
-        $('.video_container').removeClass('d-none');
+        $('.video_ctrl').removeClass('d-none');
         $('#videoPlayer').attr("src", 'https://www.youtube.com/embed/' + id);
 
-        const item = $('.video_container').offset().top - $('.navbar').innerHeight();
+        const item = $('.video_ctrl').offset().top - $('.navbar').innerHeight();
         $('html,body').animate({
             scrollTop: item
         }, 200);
