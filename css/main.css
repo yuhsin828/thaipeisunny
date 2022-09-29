@@ -1,6 +1,6 @@
 ::selection {
-    color: white;
-    background: black;
+    color: #FEFEFE;
+    background: #333333;
 }
 
 body {
@@ -155,6 +155,10 @@ footer li .text_light:hover {
 }
 
 /*---------------- other styles ----------------*/
+.round_05 {
+    border-radius: 0.5rem;
+}
+
 .round_1 {
     border-radius: 1rem;
 }
