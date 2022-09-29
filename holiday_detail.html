@@ -79,9 +79,9 @@
                 </ol>
             </div>
 
-            <div class="bg_white round_1">
+            <div class="bg_white round_1" id="mainContent">
                 <!-- 簡介 -->
-                <!-- <div class="d-md-flex justify-content-evenly px-3 py-5 px-md-5 gap-3">
+                <div class="d-md-flex justify-content-evenly px-3 py-5 px-md-5 gap-3" id="item1">
                     <div class="text-center">
                         <div class="title_ctrl">
                             <img class="img-fluid" src="./images/holiday/4_1_a_1.svg" alt="">
@@ -102,9 +102,11 @@
                             </picture>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
                 <!-- 習俗 -->
-                <!-- <div class="position-relative d-flex justify-content-center px-2 px-md-5 py-5 gap-1">
+                <div class="position-relative d-flex justify-content-center px-2 py-5 px-md-5 gap-1 item_hide"
+                     id="item2">
                     <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
                          data-bs-wrap="false">
                         <div class="carousel-indicators">
@@ -218,25 +220,24 @@
                     </div>
 
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
-                            data-bs-slide="prev">
+                            data-bs-slide="prev" onclick="stopMp3()">
                         <img class="img-fluid carousel-control-prev-icon" aria-hidden="true"
                              src="./images/holiday/4_往左.svg">
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
-                            data-bs-slide="next">
+                            data-bs-slide="next" onclick="stopMp3()">
                         <img class="img-fluid carousel-control-next-icon" aria-hidden="true"
                              src="./images/holiday/4_往右.svg">
                     </button>
+                </div>
 
-                </div> -->
                 <!-- 故事 -->
-                <div class="text-center px-3 py-5 px-md-5">
+                <div class="text-center px-3 py-5 px-md-5 item_hide" id="item3">
                     <div class="title_ctrl mb-3">
                         <img class="img-fluid" src="./images/holiday/4_1_c_1.svg" alt="">
                     </div>
                     <div class="video_ctrl">
-                        <iframe id="videoPlayer" src="https://www.youtube.com/embed/jvqaz6LD4lQ" frameborder="0"
-                                allowfullscreen></iframe>
+                        <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="d-flex justify-content-center my-3">
                         <audio class="" src="./wav/holiday/4_1_c_4.wav" controls></audio>
@@ -247,6 +248,37 @@
                             <source class="img-fluid" srcset="./images/holiday/4_1_c_3t.svg" media="(min-width: 425px)">
                             <img class="img-fluid" src="./images/holiday/4_1_c_3m.svg" alt="">
                         </picture>
+                    </div>
+                </div>
+
+                <!-- 遊戲 -->
+                <div class="text-center px-3 py-5 px-md-5 item_hide" id="item4">
+                    <div class="title_ctrl mb-3">
+                        <img class="img-fluid" src="./images/holiday/4_1_d_1.svg" alt="">
+                    </div>
+                    <div class="scratch_ctrl">
+                        <iframe id="scratchPlayer" src="" allowtransparency="true" frameborder="0" scrolling="no"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- 按鈕 -->
+                <div class="row px-3 pb-5 px-md-5">
+                    <div class="col-6 col-md-3 text-center mb-3">
+                        <img class="img-fluid bg_blue round_1 box_shadow_2 pointer" id="btn1"
+                             src="./images/holiday/4_簡介.svg" alt="簡介" onclick="changeItem(1)">
+                    </div>
+                    <div class="col-6 col-md-3 text-center mb-3">
+                        <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn2"
+                             src="./images/holiday/4_習俗.svg" alt="習俗" onclick="changeItem(2)">
+                    </div>
+                    <div class="col-6 col-md-3 text-center mb-3">
+                        <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn3"
+                             src="./images/holiday/4_故事.svg" alt="故事" onclick="changeItem(3,'jvqaz6LD4lQ')">
+                    </div>
+                    <div class="col-6 col-md-3 text-center mb-3">
+                        <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn4"
+                             src="./images/holiday/4_遊戲.svg" alt="遊戲" onclick="changeItem(4, '629840733')">
                     </div>
                 </div>
             </div>
@@ -285,5 +317,52 @@
 
 
 <script>
+    // initLoad(1);
+    let prevI = 1;
 
+    // function initLoad(i) {
+    //     for (let j = 1; j <= 4; j++) {
+    //         $('#btn' + j).removeClass('bg_blue').addClass('bg_lightBlue');
+    //         $('#item' + j).addClass('item_hide');
+    //     };
+    //     $('#btn' + i).removeClass('bg_lightBlue').addClass('bg_blue');
+    //     $('#item' + i).removeClass('item_hide');
+    // }
+
+    function changeItem(i, iframeId) {
+        // initLoad(i);
+        $('#btn' + prevI).removeClass('bg_blue').addClass('bg_lightBlue');
+        $('#item' + prevI).addClass('item_hide');
+
+        $('#btn' + i).removeClass('bg_lightBlue').addClass('bg_blue');
+        $('#item' + i).removeClass('item_hide');
+
+        const item = $('#mainContent').offset().top - $('.navbar').innerHeight();
+        $('html,body').animate({
+            scrollTop: item
+        }, 200);
+
+        stopMp3();
+
+        if (prevI == 3) {
+            $('#videoPlayer').attr('src', '');
+        } else if (prevI == 4) {
+            $('#scratchPlayer').attr('src', '');
+        }
+
+        if (i == 3) {
+            $('#videoPlayer').attr('src', 'https://www.youtube.com/embed/' + iframeId);
+        } else if (i == 4) {
+            $('#scratchPlayer').attr('src', 'https://scratch.mit.edu/projects/' + iframeId + '/embed');
+        }
+
+        prevI = i;
+    }
+
+    function stopMp3() {
+        $('audio').each(function () {
+            this.pause(); // Stop playing
+            this.currentTime = 0; // Reset time
+        });
+    }
 </script>
