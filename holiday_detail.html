@@ -122,7 +122,7 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="d-md-flex justify-content-evenly">
+                                <div class="d-md-flex justify-content-evenly gap-3">
                                     <div class="text-center">
                                         <div class="title_ctrl">
                                             <img class="img-fluid" src="./images/holiday/4_1_b1_1.svg" alt="">
@@ -146,7 +146,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="d-md-flex justify-content-evenly">
+                                <div class="d-md-flex justify-content-evenly gap-3">
                                     <div class="text-center">
                                         <div class="title_ctrl">
                                             <img class="img-fluid" src="./images/holiday/4_1_b2_1.svg" alt="">
@@ -170,7 +170,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="d-md-flex justify-content-evenly">
+                                <div class="d-md-flex justify-content-evenly gap-3">
                                     <div class="text-center">
                                         <div class="title_ctrl">
                                             <img class="img-fluid" src="./images/holiday/4_1_b3_1.svg" alt="">
@@ -194,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="d-md-flex justify-content-evenly">
+                                <div class="d-md-flex justify-content-evenly gap-3">
                                     <div class="text-center">
                                         <div class="title_ctrl">
                                             <img class="img-fluid" src="./images/holiday/4_1_b4_1.svg" alt="">
@@ -218,7 +218,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="d-md-flex justify-content-evenly">
+                                <div class="d-md-flex justify-content-evenly gap-3">
                                     <div class="text-center">
                                         <div class="title_ctrl">
                                             <img class="img-fluid" src="./images/holiday/4_1_b5_1.svg" alt="">
@@ -245,14 +245,14 @@
                     </div>
 
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
-                            data-bs-slide="prev" onclick="stopMp3()">
+                            data-bs-slide="prev">
                         <img class="img-fluid carousel-control-prev-icon" aria-hidden="true"
-                             src="./images/holiday/4_往左.svg">
+                             src="./images/holiday/4_往左.svg" onclick="stopMp3()">
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
-                            data-bs-slide="next" onclick="stopMp3()">
+                            data-bs-slide="next">
                         <img class="img-fluid carousel-control-next-icon" aria-hidden="true"
-                             src="./images/holiday/4_往右.svg">
+                             src="./images/holiday/4_往右.svg" onclick="stopMp3()">
                     </button>
                 </div>
 
@@ -310,7 +310,8 @@
 
             <div class="row mt-5">
                 <a class="text-center" href="./holiday.html">
-                    <img class="img-fluid bg_light round_1 box_shadow_2 pointer" src="./images/holiday/4_返回目錄.svg" alt="返回目錄">
+                    <img class="img-fluid bg_light round_1 box_shadow_2 pointer" src="./images/holiday/4_返回目錄.svg"
+                         alt="返回目錄">
                 </a>
             </div>
         </div>
@@ -348,48 +349,60 @@
 
 
 <script>
-    // initLoad(1);
     let prevI = 1;
-
-    // function initLoad(i) {
-    //     for (let j = 1; j <= 4; j++) {
-    //         $('#btn' + j).removeClass('bg_pink').addClass('bg_lightPink');
-    //         $('#item' + j).addClass('item_hide');
-    //     };
-    //     $('#btn' + i).removeClass('bg_lightPink').addClass('bg_pink');
-    //     $('#item' + i).removeClass('item_hide');
-    // }
+    let curI = 1;
+    let prevCustom = 0;
 
     function changeItem(i, iframeId) {
-        // initLoad(i);
+        curI = i;
+
+        // 每切換選項，復原前一個選項按鈕的背景顏色、隱藏內容
         $('#btn' + prevI).removeClass('bg_pink').addClass('bg_lightPink');
         $('#item' + prevI).addClass('item_hide');
 
         $('#btn' + i).removeClass('bg_lightPink').addClass('bg_pink');
         $('#item' + i).removeClass('item_hide');
 
+        // 設定此選項按鈕的背景顏色、秀出來，並自動滑動到上面
         const item = $('#mainContent').offset().top - $('.navbar').innerHeight();
         $('html,body').animate({
             scrollTop: item
         }, 200);
 
+        // 呼叫 停止播放音檔
         stopMp3();
 
+        // 如果前一個選項是故事或遊戲，把來源移除強制結束
         if (prevI == 3) {
             $('#videoPlayer').attr('src', '');
         } else if (prevI == 4) {
             $('#scratchPlayer').attr('src', '');
         }
 
+        // 如果現在的選項是故事或遊戲，加入來源
         if (i == 3) {
             $('#videoPlayer').attr('src', 'https://www.youtube.com/embed/' + iframeId);
         } else if (i == 4) {
             $('#scratchPlayer').attr('src', 'https://scratch.mit.edu/projects/' + iframeId + '/embed');
         }
 
-        prevI = i;
+        prevI = i; // 更新前一個選項編號
     }
 
+    // 滑動切換習俗時，停止播放音檔
+    $(window).scroll(function () {
+        if (curI == 2) {
+            let curCustom = $('.carousel-indicators .active').attr('data-bs-slide-to');
+            // console.log(curCustom);
+            if (curCustom !== prevCustom) {
+                stopMp3();
+                // console.log(prevCustom);
+                prevCustom = curCustom;
+            }
+        }
+    })
+
+    // 每切換選項，停止播放音檔
     function stopMp3() {
         $('audio').each(function () {
             this.pause(); // Stop playing
