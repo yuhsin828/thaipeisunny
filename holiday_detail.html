@@ -106,8 +106,8 @@
 
                 <!-- 習俗 -->
                 <div class="position-relative px-2 py-5 px-md-5 gap-1 item_hide" id="item2">
-                    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel"
-                         data-bs-interval="false">
+                    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
+                         data-bs-touch="false">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -288,21 +288,21 @@
                 </div>
 
                 <!-- 按鈕 -->
-                <div class="row px-3 pb-5 px-md-5">
+                <div class="row px-3 pb-5 pt-3 px-md-5">
                     <div class="col-6 col-md-3 text-center mb-3">
-                        <img class="img-fluid bg_pink round_1 box_shadow_2 pointer" id="btn1"
+                        <img class="img-fluid bg_blue round_1 box_shadow_2 pointer" id="btn1"
                              src="./images/holiday/4_簡介.svg" alt="簡介" onclick="changeItem(1)">
                     </div>
                     <div class="col-6 col-md-3 text-center mb-3">
-                        <img class="img-fluid bg_lightPink round_1 box_shadow_2 pointer" id="btn2"
+                        <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn2"
                              src="./images/holiday/4_習俗.svg" alt="習俗" onclick="changeItem(2)">
                     </div>
                     <div class="col-6 col-md-3 text-center mb-3">
-                        <img class="img-fluid bg_lightPink round_1 box_shadow_2 pointer" id="btn3"
+                        <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn3"
                              src="./images/holiday/4_故事.svg" alt="故事" onclick="changeItem(3,'jvqaz6LD4lQ')">
                     </div>
                     <div class="col-6 col-md-3 text-center mb-3">
-                        <img class="img-fluid bg_lightPink round_1 box_shadow_2 pointer" id="btn4"
+                        <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn4"
                              src="./images/holiday/4_遊戲.svg" alt="遊戲" onclick="changeItem(4, '629840733')">
                     </div>
                 </div>
@@ -351,20 +351,22 @@
 <script>
     let prevI = 1;
     let curI = 1;
-    let prevCustom = 0;
+    // let prevCustom = 0;
+
+    $('#topNav').removeClass('sticky-top');
 
     function changeItem(i, iframeId) {
         curI = i;
 
         // 每切換選項，復原前一個選項按鈕的背景顏色、隱藏內容
-        $('#btn' + prevI).removeClass('bg_pink').addClass('bg_lightPink');
+        $('#btn' + prevI).removeClass('bg_blue').addClass('bg_lightBlue');
         $('#item' + prevI).addClass('item_hide');
 
-        $('#btn' + i).removeClass('bg_lightPink').addClass('bg_pink');
+        $('#btn' + i).removeClass('bg_lightBlue').addClass('bg_blue');
         $('#item' + i).removeClass('item_hide');
 
         // 設定此選項按鈕的背景顏色、秀出來，並自動滑動到上面
-        const item = $('#mainContent').offset().top - $('.navbar').innerHeight();
+        const item = $('#mainContent').offset().top;
         $('html,body').animate({
             scrollTop: item
         }, 200);
@@ -390,17 +392,17 @@
     }
 
     // 滑動切換習俗時，停止播放音檔
-    $(window).scroll(function () {
-        if (curI == 2) {
-            let curCustom = $('.carousel-indicators .active').attr('data-bs-slide-to');
-            // console.log(curCustom);
-            if (curCustom !== prevCustom) {
-                stopMp3();
-                // console.log(prevCustom);
-                prevCustom = curCustom;
-            }
-        }
-    })
+    // $(window).scroll(function () {
+    //     if (curI == 2) {
+    //         let curCustom = $('.carousel-indicators .active').attr('data-bs-slide-to');
+    //         // console.log(curCustom);
+    //         if (curCustom !== prevCustom) {
+    //             stopMp3();
+    //             // console.log(prevCustom);
+    //             prevCustom = curCustom;
+    //         }
+    //     }
+    // })
 
     // 每切換選項，停止播放音檔
     function stopMp3() {

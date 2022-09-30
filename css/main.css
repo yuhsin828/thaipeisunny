@@ -59,6 +59,11 @@ nav ul .active:hover {
     border-radius: 50%;
 }
 
+.top_btn:hover{
+    box-shadow: none !important;
+    transition: all 0.4s;
+}
+
 /*---------------- breadcrumb ----------------*/
 .breadcrumb-item a:hover {
     color: #666666;
@@ -303,4 +308,18 @@ aside .text_dark:hover {
 /*---------------- holidaydetail page ----------------*/
 .item_hide {
     display: none !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    bottom: 0rem;
+}
+
+@media screen and (min-width:768px) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 0;
+        bottom: 0;
+    }
 }
