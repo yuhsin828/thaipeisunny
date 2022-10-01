@@ -146,6 +146,10 @@ footer li .text_light:hover {
     background-color: #FCE9DB;
 }
 
+.bg_gold{
+    background-color: #F7CB0F;
+}
+
 /*---------------- text color ----------------*/
 .text_light {
     color: #FFFEF9;
@@ -160,6 +164,10 @@ footer li .text_light:hover {
 }
 
 /*---------------- other styles ----------------*/
+.fs_s{
+    font-size:xx-small;
+}
+
 .round_05 {
     border-radius: 0.5rem;
 }
